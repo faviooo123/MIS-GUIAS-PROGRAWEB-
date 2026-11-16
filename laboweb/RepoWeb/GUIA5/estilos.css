@@ -1,0 +1,89 @@
+/* ===== 1. Colores de la marca ===== */
+:root {
+  --cafe: #5C3A00;
+  --amarillo: #FDB913;
+  --bs-body-bg: #FFF8E7;
+  --bs-body-color: #2B2118;
+}
+
+.bg-cafe { background-color: var(--cafe); }
+.bg-amarillo { background-color: var(--amarillo); color: #161616; }
+
+/* ===== 2. Botón propio con las variables de Bootstrap ===== */
+.btn-marca {
+  --bs-btn-color: #FFF8E7;
+  --bs-btn-bg: var(--cafe);
+  --bs-btn-border-color: var(--cafe);
+  --bs-btn-hover-color: #161616;
+  --bs-btn-hover-bg: var(--amarillo);
+  --bs-btn-hover-border-color: var(--amarillo);
+  --bs-btn-active-color: #161616;
+  --bs-btn-active-bg: var(--amarillo);
+  --bs-btn-active-border-color: var(--amarillo);
+  --bs-btn-focus-shadow-rgb: 92, 58, 0;
+}
+
+/* ===== 3. Contraste accesible del menú ===== */
+.navbar-dark {
+  --bs-navbar-color: rgba(255, 255, 255, 0.85);
+  --bs-navbar-hover-color: #FDB913;
+  --bs-navbar-active-color: #FFFFFF;
+}
+
+/* ===== 4. Etiqueta de precio y lista ===== */
+.precio {
+  display: inline-block;
+  background: var(--amarillo);
+  color: #161616;
+  font-weight: bold;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+#lista-pedido li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #E3DECF;
+}
+
+/* ===== 5. Imágenes y tarjetas uniformes ===== */
+.producto img, .card-img-top {
+  height: 160px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.producto.card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  flex-grow: 1 !important;
+}
+
+/* ===== 6. Botón para volver al laboratorio ===== */
+.btn-volver-lab {
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 0.5rem 1.25rem;
+  background-color: var(--cafe);
+  color: #FFF8E7;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-volver-lab:hover {
+  background-color: var(--amarillo);
+  color: #161616;
+}
